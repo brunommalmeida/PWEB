@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var aluno1 = {
+            RA: "0030481913002",
+            Nome: "Bruno Marcelo Martins de Almeida"
+        };
+
+        alert(aluno1.RA + " | " + aluno1.Nome);
+
+        var aluno2 = new Object();
+        aluno2.RA = "0030481913002";
+        aluno2.Nome = "Bruno Marcelo Martins de Almeida";
+        alert(aluno2.RA + " | " + aluno2.Nome);
+        var aluno3 = {}
+        aluno3["RA"] = "0030481913002";
+        aluno3["Nome"] = "Bruno Marcelo Martins de Almeida";
+        alert(aluno3.RA + " | " +  aluno3.Nome);
+    </script>
+</body>
+</html>

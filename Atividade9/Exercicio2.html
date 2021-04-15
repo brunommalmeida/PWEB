@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function Conta() {
+            var nomeCorrentista;
+            var banco;
+            var numeroConta;
+            var saldo;
+
+            this.getNomeCorrentista = function () {
+                return nomeCorrentista;
+            };
+            this.setNomeCorrentista = function (value) {
+                nomeCorrentista = value;
+            };
+
+
+            this.getBanco = function () {
+                return banco;
+            };
+            this.setBanco = function (value) {
+                banco = value;
+            };
+
+            this.getNumeroConta = function () {
+                return numeroConta;
+            };
+            this.setNumeroConta = function (value) {
+                numeroConta = value;
+            };
+
+            this.getSaldo = function () {
+                return saldo;
+            };
+            this.setSaldo = function (value) {
+                saldo = value;
+            };
+
+            
+        }
+
+        function Corrente() {
+            var saldoEspecial;
+            this.getSaldoEspecial = function () {
+                return saldoEspecial;
+            };
+            this.setSaldoEspecial = function (value) {
+                saldoEspecial = value;
+            };
+        }
+
+        function Poupanca() {
+            var juros;
+            var dataVencimento;
+            this.getJuros = function () {
+                return juros;
+            };
+            this.setJuros = function (value) {
+                juros = value;
+            };
+
+            this.getDataVencimento = function () {
+                return dataVencimento;
+            };
+            this.setDataVencimento = function (value) {
+                dataVencimento = value;
+            };
+        }
+
+
+        Corrente.prototype = new Conta();
+        Poupanca.prototype = new Conta();
+
+
+        nContaCorrente = new Corrente();
+        nContaCorrente.setNomeCorrentista("Bruno Almeida");
+        nContaCorrente.setBanco("Bradesco");
+        nContaCorrente.setNumeroConta("123456");
+        nContaCorrente.setSaldo(1000);
+        nContaCorrente.setSaldoEspecial(15000);
+
+
+        nContaPoupanca = new Poupanca();
+        nContaPoupanca.setNomeCorrentista("Bruno Almeida");
+        nContaPoupanca.setBanco("Bradesco");
+        nContaPoupanca.setNumeroConta("123456");
+        nContaPoupanca.setSaldo(1000);
+        nContaPoupanca.setJuros(5);
+        nContaPoupanca.setDataVencimento("14/04/2021");
+
+        
+        alert(`Dados \n  
+              Nome: ${nContaCorrente.getNomeCorrentista()} \n 
+              Banco: ${nContaCorrente.getBanco()} \n  
+              Conta: ${nContaCorrente.getNumeroConta()}  \n 
+              Saldo: ${nContaCorrente.getSaldo()}  \n  
+              Saldo Especial: ${nContaCorrente.getSaldoEspecial()} `);
+        
+        alert(`Dados \n 
+              Nome: ${nContaPoupanca.getNomeCorrentista()} \n
+              Banco: ${nContaPoupanca.getBanco()} \n 
+              Conta: ${nContaPoupanca.getNumeroConta()}  \n
+              Saldo: ${nContaPoupanca.getSaldo()}  \n
+              Juros: ${nContaPoupanca.getJuros()} \n
+              Data Vencimento: ${nContaPoupanca.getDataVencimento()}`);
+
+    </script>
+</body>
+
+</html>
