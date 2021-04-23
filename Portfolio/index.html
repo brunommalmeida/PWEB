@@ -3,48 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="shortcut icon " href="images/eu.jfif">
+    <title>Bruno Almeida</title>
+
 </head>
 
-<body>
-    <div id="root" class="raiz">
-        <div id="menu" class="menu_lateral">
-            <img src="images/profile_img.jfif">
-            <label class="label_nome">
-                Bruno Marcelo Martins de Almeida
-            </label>
-            <a class="choices" href="#sobremim">Sobre mim</a><br>
-            <a class="choices" href="#experiencia">Experiência</a><br>
-            <a class="choices" href="#skills">Skills</a><br>
-            <a class="choices" href="#networking">Networking<br></a>
+<body class="body">
+    <div id="container">
+        <div id="containerAvatar">
+            <img id="avatar" alt="Lucas Araújo" src="images/eu.jfif">
         </div>
 
-        <div id="sobremim" class="divmain">
-            <h2 class="title">Sobre mim</h2>
-            <p class="details">This is a Bootstrap v4.2.1 CSS Template for you. Edit and use this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</p>
-        </div>
-        <div id="experiencia" class="divmain">
-            <h2 class="title">Experiência</h2>
-            <p class="details">This test is a Bootstrap v4.2.1 CSS Template for you. Edit and use this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</p>
+        <div id="containerInfo">
+            <div id="containerIntro">
+                <p id="myName">Bruno Almeida</p>
+                <p class="description">Analista e Desenvolvedor de Sistemas Júnior</p>
+                <p id="phrase">Desenvolvimento em C# .NET e Javascript</p>
+            </div>
 
+            <div id="containerSocial">
+                <a id="linkedinIcon" href="https://www.linkedin.com/in/brunomarcelo99/"><i
+                        class="fa fa-linkedin fa-lg"> Linkedin</i></a>
+                <a id="githubIcon" href="https://github.com/brunommalmeida"><i
+                        class="fa fa-github fa-lg">
+                        GitHub</i></a>
+            </div>
         </div>
-        <div id="skills" class="divmain">
-            <h2 class="title">Skills</h2>
-            <p class="details">This is a Bootstrap v4.2.1 CSS Template for you. Edit and use this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</p>
-
-        </div>
-        <div id="networking" class="divmain">
-            <h2 class="title">Networking</h2>
-            <p class="details">This is a Bootstrap v4.2.1 CSS Template for you. Edit and use this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.
-            </p>
-
-        </div>
-        <div style="clear:both;"></div>
     </div>
+    <div id="containerSkills">
+        <div id="skillsinfo">
+            <p id="skillsTitle">Skills</p>
+            <li class="lis">
+                C# .NET
+            </li>
+            <li class="lis">
+                Javascript
+            </li>
+            <li class="lis">
+                Transact-SQL
+            </li>
+            <li class="lis">
+                ADPVL
+            </li>
+        </div>
+    </div>
+    <div id="containerExperiencia">
+        <div id="xpinfo">
+            <p id="xpTitle">Experiência</p>
+            <li class="lis">
+                AdimaxPet - Indústria e Comércio de Alimentos
+            </li>
+            <p class="periodo">
+                Período: Dez/19 - Jan/21
+            </p>
+            <p class="periodo">
+                Função: Auxiliar de Sistemas Pleno
+            </p>
+            <p class="periodo">
+                Atividades: Suporte aos sistemas legados e desenvolvimento de consultas sql
+            </p>
+            <li class="lis">
+                AdimaxPet - Indústria e Comércio de Alimentos
+            </li>
+            <p class="periodo">
+                Período: Jan/21 - Atualmente
+            </p>
+            <p class="periodo">
+                Função: Analista de Sistemas Júnior
+            </p>
+            <p class="periodo">
+                Atividades: Desenvolvimento em c# .Net, desenvolvimento web em javascript (plataforma Fluig TOTVS) e atendimento de chamados nível 2 e 3. Implantações de novos processos nas filiais e capacitação de pessoal.
+            </p>
+        </div>
+    </div>
+    <div id="containerExperiencia">
+        <div id="xpinfo">
+            <p id="xpTitle">Curiosidades</p>
+            <p id="curious">
+                Nunca me imaginei trabalhando com TI apenas foi uma ideia que tive aos 18 anos e decidi ir a fundo. Deu certo e estou conseguindo me desenvolver na área, aliando os conhecimentos da faculdade com as experiências do trabalho.     
+            </p><br>
+            
+        </div>
+    </div>
+
+
 </body>
 
 </html>

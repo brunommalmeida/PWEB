@@ -1,84 +1,320 @@
-    img {
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Montserrat;
+  }
+.fonteMenu
+{
+    color: white;
+    font-weight: bolder;
+    font-size: 3vw;
+    margin-left: 2.5vw;
+    
+}
+.corVerde
+{
+    color: #5aad99
+}
+
+.body
+{
+    background-color: #612F74;
+    margin: 120px 0 0 0;
+}
+
+#container 
+{
+    width: 60%;
+    display: flex;  
+    margin: auto auto;    
+    box-shadow: 10px 8px 15px 2px rgba(37, 74, 85, 0.2); 
+    margin-bottom: 8vw;       
+}
+#containerSkills
+{
+    width: 60%;
+    display: flex;  
+    margin: auto auto;    
+    margin-bottom: 4vw;    
+    background-color: white;   
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 8vw;
+}
+
+#containerExperiencia
+{
+    width: 60%;
+    display: flex;  
+    margin: auto auto;    
+    margin-bottom: 4vw;    
+    background-color: white;   
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 8vw;
+}
+#skillsinfo
+{
+    width: 100%;
+    text-align: center;
+}
+
+#xpinfo
+{
+    width: 100%;
+    text-align: center;
+}
+#containerAvatar 
+{
+    width: 60%;
+    background-color: gray;  
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;        
+    text-align: center;
+}
+    
+
+#avatar
+{    
+    width: 76%;    
+    object-fit: scale-down;        
+    margin: 25px 8px;    
+}
+
+#containerInfo 
+{    
+    width: 100%;    
+    background-color: white;  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;    
+    
+}
+
+#menu
+{
+    width: 100%;    
+    text-align: center;
+    margin-bottom: 3.2vw;
+}
+#containerIntro
+{
+    margin: 20px 0px 0px 30px;
+}
+#skillsInfo
+{
+    margin: 20px 0px 0px 30px;
+}
+#xpInfo
+{
+    margin: 20px 0px 0px 30px;
+}
+#myName
+{
+    font-size: 3vw;
+    color:black;
+    
+}
+#skillsTitle
+{
+    font-size: 3vw;
+    color:black;
+    text-align: center;
+}
+
+#xpTitle
+{
+    font-size: 3vw;
+    color:black;
+    text-align: center;
+}
+
+.lis{
+    font-size: 2.2vw;   
+    color: #612F74;
+    text-align: left;
+    margin-left: 2.8vw;
+}
+.description
+{
+    font-size: 2.2vw;   
+    color: #612F74;
+}
+
+#phrase
+{
+    font-size: 1.3vw;
+}
+#curious
+{
+    font-size: 1.3vw;
+}
+
+
+.periodo
+{
+    font-size: 1.3vw;
+    text-align: left;
+    margin-left: 5vw;
+    font-weight: bolder;
+
+}
+
+
+#containerSocial
+{   
+    margin-right: 10px;
+    margin-top: 45px;
+    text-align: end;
+}
+
+#linkedinIcon
+{
+    font-size: 1.1vw;
+    color: #007bb5;
+}
+
+#githubIcon
+{
+    font-size: 1.1vw;    
+    color: black;
+}
+
+
+@media only screen and (max-width: 768px) 
+{ 
+    *{
+        margin:3vw  0 3vw 0;
+        padding: 3vw 0 3vw 0;
+    }
+    
+    #container
+    {
+        width: 90%;
         display: block;
-        border-radius: 50%;
-        width: 20%;
-        margin-left: 480px;
-        margin-bottom: 20px;
-    }
-    
-    .label_nome {
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        margin-left: 450px;
-        width: 30%;
-        display: flex;
-    }
-    
-    .main-nav {
-        margin-left: 40px;
-        margin-top: 15px;
-    }
-    
-    .main-nav li a {
-        height: 70px;
-        line-height: 70px;
-        display: inline-block;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
-        font-weight: 700;
-        color: white;
-        width: 25%;
-        transition: all 0.5s;
-    }
-    
-    .main-nav ul {
-        list-style-type: none;
-    }
-    
-    .menu_lateral {
-        margin-left: 5px;
-        margin-bottom: 120px;
-    }
-    
-    body {
-        background-color: #612F74;
-    }
-    
-    .raiz {
-        background-color: #612F74;
-    }
-    
-    .choices {
-        color: white;
-        width: 30%;
-        right: 10%;
-        margin-left: 550px;
-        position: relative;
-        font-size: 25px;
-        display: inline-block;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 33px;
         text-align: center;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;  
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;  
+        margin: auto auto;        
     }
-    
-    .details {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #612F74;
-        font-size: 15px;
-        font-weight: normal;
-        border-bottom: 3px solid rgba(250, 250, 250, 0.25);
-        min-height: 80vh;
-    }
-    
-    .title {
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        font-weight: bold;
-    }
-    
-    .divmain {
+    #containerSkills
+    {
+        width: 90%;
+        display: block;
+        text-align: center;
         background-color: white;
-        margin-bottom: 31px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;  
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;  
+        margin: auto auto;        
     }
+
+    #containerExperiencia
+    {
+        width: 90%;
+        display: block;
+        text-align: center;
+        background-color: white;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;  
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;  
+        margin: auto auto;        
+    }
+    #containerInfo
+    {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;  
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;  
+        
+    }
+
+    #containerAvatar
+    {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;  
+        border-bottom-right-radius: 0px;         
+        display: inline-block;
+        text-align: center;
+        
+    }
+
+    #avatar
+    {    
+        width: 90%;        
+        
+        
+    }
+
+    #containerIntro
+    {
+        margin: 0 0 0 0;
+        text-align: center;        
+    }
+
+    #skillsinfo
+    {
+        margin: 0 0 0 0;
+        text-align: center;  
+    }
+    #xpinfo
+    {
+        margin: 0 0 0 0;
+        text-align: center;  
+    }
+    #containerSocial
+    {        
+        margin-top: 0;
+        margin-right: 10px;        
+    }
+
+    #myName
+    {
+        font-size: 6.3vw;
+    }
+
+    .description
+    {
+        font-size: 5.6vw;       
+    }
+
+    #phrase
+    {
+        font-size: 4.5vw;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #curious
+    {
+        font-size: 4.5vw;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .periodo
+    {
+        font-size: 4.5vw;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bolder;
+    }
+    #linkedinIcon
+    {
+      font-size: 3.6vw;
+      margin-right: 7px;
+    }
+
+    #githubIcon
+     {
+        font-size: 3.6vw;
+        margin-right: 7px;
+    }
+  }
