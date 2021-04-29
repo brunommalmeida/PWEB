@@ -1,0 +1,17 @@
+.container{
+
+    position: relative;
+    text-align: center;
+    color: white;
+      
+}
+
+.imagem{
+    width: 40%;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    margin-bottom: 2px;
+}
