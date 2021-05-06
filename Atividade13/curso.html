@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id = "titulo_curso"></h1>
+        <p id="descricao_curso"></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const curso = urlParams.get("objeto");
+
+        let obj = JSON.parse(curso);
+
+        const titulo = document.getElementById("titulo_curso");
+        const descricao = document.getElementById("descricao_curso");
+
+        titulo.innerText = obj.Titulo;
+        descricao.innerText = obj.Descricao;
+      });
+    </script>
+</body>
+</html>

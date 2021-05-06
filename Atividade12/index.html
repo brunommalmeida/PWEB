@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <label style="text-align: center;">FORMULARIO PRINCIPAL</label>
+    <form method="POST" name="formulario" id="formulario" onsubmit="return validarDados();" onreset="limparDados()">
+
+        <div id="principal" width=200 heigth=200 >
+            <label>Nome Completo:</label><br>
+            <input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+            <br>
+            <br>
+            <label>E-Mail:</label> <br>
+            <input name="idEmail" type="email" id="idEmail" size="52" maxlength="150">
+            <br>
+            <br> 
+            <label>Mensagem:</label><br>
+            <textarea name="idComentario" cols="50" rows="8" id="idComentario" value="" input></textarea>
+            <br>
+            <br>
+            <br>
+
+            <label style="margin-left: 30px;" >Pesquisa</label>
+            <br>
+            <br>
+            <label>Você já visitou nosso site antes?</label>
+            <br>
+            <br>
+            <div style="margin-left: 15px;">
+                <input type="radio" name="opcoespesquisa" value="Sim" checked="true">Sim
+                <input type="radio" name="opcoespesquisa" value="Nao">Não
+            </div>
+            
+            <br>
+            <br>
+            <input name="Submit" type="submit" form="formulario" value="Submit">
+            <input name="Reset" type="reset" form="formulario" value="Redefinir">
+        </div>
+    </form>
+</body>
+
+</html>
